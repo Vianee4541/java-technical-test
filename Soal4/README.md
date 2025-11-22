@@ -10,9 +10,13 @@ The repository implements backend using Java, Spring Boot and H2 Database.
 
 ## Running the Service
 1. Run User Service
-   ```cd UserService ```
-    ```mvn spring-boot:run```
+   ```bash
+    cd UserService 
+    mvn spring-boot:run
+   ```
 2. Run Audit Service
-   ```cd AuditService ``` 
-   ```mvn spring-boot:run```
+   ```bash
+    cd AuditService 
+    mvn spring-boot:run
+   ```
 
