@@ -1,7 +1,7 @@
 # User & Audit Service
 
 User & Audit Service is a project built to meet the challenge of the IT Digital Service - BCA Digital. 
-The repository implements backend using Java, Spring Boot and H2 Database.
+The repository implements backend using Java, Spring Boot, Spring Kafka and H2 Database.
 
 ## Key Features
 1. User Service: Have API to creates user and publishes a Kafka Event.
@@ -9,12 +9,17 @@ The repository implements backend using Java, Spring Boot and H2 Database.
 
 
 ## Running the Service
-1. Run User Service
+1. Start Kafka and Zookeeper for Mac
+   ```bash
+    brew services start kafka
+    brew services start zookeeper
+   ```
+2. Run User Service
    ```bash
     cd UserService 
     mvn spring-boot:run
    ```
-2. Run Audit Service
+3. Run Audit Service
    ```bash
     cd AuditService 
     mvn spring-boot:run
